@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name shared_libs)(type KiCad)(uri C:/Kreativ/PCB/KiCad/shared_libs)(options "")(descr ""))
+)
