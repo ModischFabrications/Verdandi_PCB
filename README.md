@@ -1,3 +1,5 @@
+![Build with KiCaD](https://img.shields.io/badge/build%20with-KiCaD-orange)
+
 # Verdandi_PCB
 KiCad PCB for https://github.com/ModischFabrications/Verdandi
 
