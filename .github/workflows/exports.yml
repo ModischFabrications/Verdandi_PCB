@@ -1,0 +1,39 @@
+name: KiCad Exports
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+    - 'v1'
+  pull_request:
+    paths:
+    - 'v1'
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    
+    steps:
+    - uses: actions/checkout@v2
+    
+    - uses: nerdyscout/kicad-exports@v2.3.1
+      with:
+      # Required - kibot config file
+        config: docs.kibot.yaml
+      # optional - prefix to output defined in config
+        dir: docs
+      # optional - schematic file
+        schema: 'v1/*.sch'
+      # optional - PCB design file
+        board: 'v1/*.kicad_pcb'
+      # optional - verbose output info
+        verbose: 1
+        
+    - name: upload results
+      uses: actions/upload-artifact@v2
+      with:
+        name: docs
+        path: |
+            docs
+            !**.ogv
