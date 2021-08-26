@@ -1,13 +1,6 @@
 name: KiCad Exports
 
-on:
-  workflow_dispatch:
-  push:
-    paths:
-    - 'v1'
-  pull_request:
-    paths:
-    - 'v1'
+on: [push, pull_request, workflow_dispatch]
 
 jobs:
   export:
@@ -27,8 +20,6 @@ jobs:
         schema: 'v1/*.sch'
       # optional - PCB design file
         board: 'v1/*.kicad_pcb'
-      # optional - verbose output info
-        verbose: 1
         
     - name: upload results
       uses: actions/upload-artifact@v2
