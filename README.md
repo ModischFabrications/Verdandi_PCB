@@ -7,6 +7,8 @@ Links can be found at https://github.com/ModischFabrications/Verdandi.
 
 ![Full view](https://github.com/ModischFabrications/Verdandi/blob/master/res/PCB/full_cropped.png)
 
+![pcb](https://github.com/ModischFabrications/Verdandi/blob/master/res/PCB/pcb.jpg)
+
 ![schematic](https://github.com/ModischFabrications/Verdandi/blob/master/res/PCB/schematic.png)
 
 ![top](https://github.com/ModischFabrications/Verdandi/blob/master/res/PCB/top.png)
